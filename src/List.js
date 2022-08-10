@@ -1,9 +1,9 @@
 import Users from './Users'
 
 const List = ({searchResults}) => {
-const  results= searchResults.map(users => <Users key={Users.id} users={Users}/>)
+const  results= searchResults.map(users => <Users key={users.id} users={users} />)
 
-const content= results?.lenght? results : <div><p>Mo Matching</p></div>
+const content= results?.length? results : <article><p>Mo Matching</p></article>
   return (
     <main>{content}</main>
   )

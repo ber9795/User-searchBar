@@ -14,7 +14,7 @@ function App() {
    const con= getUsers()
       .then((json) => {
         setUser(json);
-        return json;
+        return (json);
             })
       .then((json) => {
         setSearchResults(json);
