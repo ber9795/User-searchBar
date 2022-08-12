@@ -11,7 +11,7 @@ function App() {
   
 
   useEffect(() => {
-   const con= getUsers()
+  getUsers()
       .then((json) => {
         setUser(json);
         return (json);
@@ -19,7 +19,7 @@ function App() {
       .then((json) => {
         setSearchResults(json);
       });
-  console.log(con)
+
   }, []);
 
   return (

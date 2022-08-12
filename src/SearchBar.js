@@ -6,7 +6,7 @@ const SearchBar = ({ user, setSearchResults }) => {
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(user)
 
-        const resultsArray = user.filter(users => users.name.includes(e.target.value) || users.email.includes(e.target.value))
+        const resultsArray = user.filter(users => users.name.toLowerCase().includes(e.target.value) || users.email.toLowerCase.includes(e.target.value))
 
       setSearchResults(resultsArray)
     }
